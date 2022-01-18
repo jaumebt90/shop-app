@@ -10,14 +10,18 @@ const styles = {
     borderRadius: "15px",
     cursor: "pointer",
   },
-  bubble: {},
+  bubble: {
+    position: "relative",
+    left: 12,
+    top: 20,
+  },
 };
 
 class Carro extends Component {
   render() {
     return (
       <div>
-        <span>
+        <span style={styles.bubble}>
           <BubbleAlert />
         </span>
         <button style={styles.carro}>Carro</button>
