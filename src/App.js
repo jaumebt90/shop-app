@@ -32,7 +32,7 @@ class App extends Component {
         <Layout>
           <Title />
           <Productos
-            agregarAlCarro={() => console.log("No hace nada")}
+            agregarAlCarro={this.agregarAlCarro}
             productos={this.state.productos}
           />
         </Layout>
