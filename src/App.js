@@ -12,6 +12,7 @@ class App extends Component {
       { name: "Lechuga", price: 500, img: "/productos/lechuga.jpg" },
     ],
     carro: [],
+    esCarroVisible: false,
   };
 
   agregarAlCarro = (producto) => {
@@ -34,6 +35,10 @@ class App extends Component {
         cantidad: 1,
       }),
     });
+  };
+
+  mostrarCarro = () => {
+    this.setState({ esCarroVisible: !this.state.esCarroVisible });
   };
 
   render() {
